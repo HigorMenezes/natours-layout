@@ -15,7 +15,7 @@ const HeaderContainer = () => (
         <span className='heading-primary-sub'>is where life happens</span>
       </h1>
 
-      <a href='/' className='btn btn-white'>
+      <a href='/' className='btn btn-white btn-animated'>
         Discovery our tours
       </a>
     </div>

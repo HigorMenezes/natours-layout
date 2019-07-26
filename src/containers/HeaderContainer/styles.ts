@@ -75,6 +75,7 @@ export const Container = styled.header`
       display: inline-block;
       border-radius: 10rem;
       transition: all 0.2s;
+      position: relative;
     }
 
     .btn:hover {
@@ -90,6 +91,33 @@ export const Container = styled.header`
     .btn-white {
       background-color: #fff;
       color: #777;
+    }
+
+    .btn::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.6s;
+    }
+
+    .btn-white::after {
+      background-color: #fff;
+    }
+
+    .btn:hover::after {
+      transform: scale(1.4, 1.6);
+      opacity: 0;
+    }
+
+    .btn-animated {
+      animation: moveInBottom 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
     }
   }
 
@@ -117,6 +145,18 @@ export const Container = styled.header`
 
     80% {
       transform: translateX(-1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
     }
 
     100% {
