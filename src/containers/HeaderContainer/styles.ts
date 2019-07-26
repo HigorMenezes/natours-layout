@@ -43,6 +43,7 @@ export const Container = styled.header`
         font-size: 60px;
         font-weight: 400;
         letter-spacing: 35px;
+        padding-left: 35px;
 
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -58,6 +59,7 @@ export const Container = styled.header`
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 17.4px;
+        padding-left: 17.4px;
 
         animation: moveInRight 1s ease-out;
       }
@@ -75,10 +77,12 @@ export const Container = styled.header`
 
     .btn:hover {
       transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     .btn:active {
       transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
     .btn-white {
