@@ -15,7 +15,7 @@ export const Container = styled.header`
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
-  .logo-box {
+  .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
@@ -25,7 +25,7 @@ export const Container = styled.header`
     }
   }
 
-  .text-box {
+  .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -38,7 +38,7 @@ export const Container = styled.header`
       text-transform: uppercase;
       margin-bottom: 6rem;
 
-      .heading-primary-main {
+      .heading-primary--main {
         display: block;
         font-size: 6rem;
         font-weight: 400;
@@ -54,7 +54,7 @@ export const Container = styled.header`
         */
       }
 
-      .heading-primary-sub {
+      .heading-primary--sub {
         display: block;
         font-size: 2rem;
         font-weight: 700;
@@ -88,7 +88,7 @@ export const Container = styled.header`
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
 
-    .btn-white {
+    .btn--white {
       background-color: #fff;
       color: #777;
     }
@@ -106,7 +106,7 @@ export const Container = styled.header`
       transition: all 0.6s;
     }
 
-    .btn-white::after {
+    .btn--white::after {
       background-color: #fff;
     }
 
@@ -115,7 +115,7 @@ export const Container = styled.header`
       opacity: 0;
     }
 
-    .btn-animated {
+    .btn--animated {
       animation: moveInBottom 0.5s ease-out 0.75s;
       animation-fill-mode: backwards;
     }

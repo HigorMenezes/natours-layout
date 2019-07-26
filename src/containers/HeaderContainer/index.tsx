@@ -6,16 +6,16 @@ import logoImg from '../../resources/images/logo-white.png';
 
 const HeaderContainer = () => (
   <Container>
-    <div className='logo-box'>
+    <div className='header__logo-box'>
       <img src={logoImg} alt='Logo' className='logo' />
     </div>
-    <div className='text-box'>
+    <div className='header__text-box'>
       <h1 className='heading-primary'>
-        <span className='heading-primary-main'>outdoors</span>
-        <span className='heading-primary-sub'>is where life happens</span>
+        <span className='heading-primary--main'>outdoors</span>
+        <span className='heading-primary--sub'>is where life happens</span>
       </h1>
 
-      <a href='/' className='btn btn-white btn-animated'>
+      <a href='/' className='btn btn--white btn--animated'>
         Discovery our tours
       </a>
     </div>
