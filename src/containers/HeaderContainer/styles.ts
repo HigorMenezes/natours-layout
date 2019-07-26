@@ -17,11 +17,11 @@ export const Container = styled.header`
 
   .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 
     .logo {
-      height: 35px;
+      height: 3.5rem;
     }
   }
 
@@ -31,19 +31,19 @@ export const Container = styled.header`
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    backface-visibility: hidden;
 
     .heading-primary {
       color: #ffffff;
       text-transform: uppercase;
-      backface-visibility: hidden;
-      margin-bottom: 60px;
+      margin-bottom: 6rem;
 
       .heading-primary-main {
         display: block;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 35px;
-        padding-left: 35px;
+        letter-spacing: 3.5rem;
+        padding-left: 3.5rem;
 
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -56,10 +56,10 @@ export const Container = styled.header`
 
       .heading-primary-sub {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 17.4px;
-        padding-left: 17.4px;
+        letter-spacing: 1.74rem;
+        padding-left: 1.74rem;
 
         animation: moveInRight 1s ease-out;
       }
@@ -67,22 +67,24 @@ export const Container = styled.header`
 
     .btn:link,
     .btn:visited {
+      font-size: 1.6rem;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 15px 40px;
+      font-weight: 700;
+      padding: 1.5rem 4rem;
       display: inline-block;
-      border-radius: 100px;
+      border-radius: 10rem;
       transition: all 0.2s;
     }
 
     .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     }
 
     .btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
 
     .btn-white {
@@ -94,32 +96,32 @@ export const Container = styled.header`
   @keyframes moveInLeft {
     0% {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(-10rem);
     }
 
     80% {
-      transform: translateX(10px);
+      transform: translateX(1rem);
     }
 
     100% {
       opacity: 1;
-      transform: translate(0px);
+      transform: translate(0);
     }
   }
 
   @keyframes moveInRight {
     0% {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(10rem);
     }
 
     80% {
-      transform: translateX(-10px);
+      transform: translateX(-1rem);
     }
 
     100% {
       opacity: 1;
-      transform: translate(0px);
+      transform: translate(0);
     }
   }
 `;
