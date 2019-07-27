@@ -1,13 +1,21 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 import heroImg from '../../resources/images/hero.jpg';
-import { alphaLightGreen, alphaDarkGreen } from '../../theme';
+
+import {
+  colorBlack,
+  colorGreyDark,
+  colorWhite,
+  colorPrimaryLight,
+  colorPrimaryDark,
+} from '../../theme';
 
 export const Container = styled.header`
   height: 95vh;
   background-image: linear-gradient(
-      to right,
-      ${alphaLightGreen},
-      ${alphaDarkGreen}
+      to right bottom,
+      ${rgba(colorPrimaryLight, 0.8)},
+      ${rgba(colorPrimaryDark, 0.8)}
     ),
     url(${heroImg});
   background-size: cover;
@@ -34,7 +42,7 @@ export const Container = styled.header`
     backface-visibility: hidden;
 
     .heading-primary {
-      color: #ffffff;
+      color: ${colorWhite};
       text-transform: uppercase;
       margin-bottom: 6rem;
 
@@ -80,17 +88,17 @@ export const Container = styled.header`
 
     .btn:hover {
       transform: translateY(-0.3rem);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1rem 2rem ${rgba(colorBlack, 0.2)};
     }
 
     .btn:active {
       transform: translateY(-0.1rem);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.5rem 1rem ${rgba(colorBlack, 0.2)};
     }
 
     .btn--white {
-      background-color: #fff;
-      color: #777;
+      background-color: ${colorWhite};
+      color: ${colorGreyDark};
     }
 
     .btn::after {
@@ -107,7 +115,7 @@ export const Container = styled.header`
     }
 
     .btn--white::after {
-      background-color: #fff;
+      background-color: ${colorWhite};
     }
 
     .btn:hover::after {
