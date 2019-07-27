@@ -7,7 +7,7 @@ import logoImg from '../../resources/images/logo-white.png';
 const HeaderContainer = () => (
   <Container>
     <div className='header__logo-box'>
-      <img src={logoImg} alt='Logo' className='logo' />
+      <img src={logoImg} alt='Logo' className='header__logo' />
     </div>
     <div className='header__text-box'>
       <h1 className='heading-primary'>

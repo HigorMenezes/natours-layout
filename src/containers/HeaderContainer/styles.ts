@@ -28,7 +28,7 @@ export const Container = styled.header`
     top: 4rem;
     left: 4rem;
 
-    .logo {
+    .header__logo {
       height: 3.5rem;
     }
   }
