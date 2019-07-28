@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rgba } from 'polished';
 import heroImg from '../../resources/images/hero.jpg';
 
-import { colorPrimaryLight, colorPrimaryDark } from '../../theme';
+import { colorPrimaryLight, colorPrimaryDark } from '../../theme/theme';
 
 export const Container = styled.header`
   height: 95vh;

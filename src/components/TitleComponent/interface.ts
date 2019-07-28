@@ -1,11 +1,15 @@
+export interface AnimationInterface {
+  moveIn: 'right' | 'left';
+}
+
 export interface ThemeInterface {
   fontSize: number;
   fontWeight: number;
   letterSpacing: number;
-  animation: 'right' | 'left';
+  animation?: AnimationInterface;
 }
 
 export default interface MainTitleInterface {
-  theme: ThemeInterface;
   children: string;
+  theme?: ThemeInterface;
 }

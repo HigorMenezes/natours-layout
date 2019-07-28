@@ -1,7 +1,15 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
-import { colorBlack, colorGreyDark, colorWhite } from '../../theme';
+import { colorBlack, colorGreyDark, colorWhite } from '../../theme/theme';
+import { MoveInBottom } from '../../animations/MoveIn';
+
+import ThemeInterface from './interface';
+
+const animation = css`
+  animation: ${MoveInBottom} 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+`;
 
 export const Container = styled.a`
   font-size: 1.6rem;
@@ -17,8 +25,8 @@ export const Container = styled.a`
   background-color: ${colorWhite};
   color: ${colorGreyDark};
 
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+  ${(props: ThemeInterface) =>
+    props.theme && props.theme.animation && animation}
 
   &:hover {
     transform: translateY(-0.3rem);
@@ -48,17 +56,5 @@ export const Container = styled.a`
   &:hover::after {
     transform: scale(1.4, 1.6);
     opacity: 0;
-  }
-
-  @keyframes moveInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
   }
 `;

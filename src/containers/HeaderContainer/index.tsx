@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from './styles';
 
 import LogoComponent from '../../components/LogoComponent';
-import MainButtonComponent from '../../components/MainButtonComponent';
+import ButtonComponent from '../../components/ButtonComponent';
 import MainTitleContainer from '../MainTitleContainer';
 
 const HeaderContainer = () => (
@@ -13,7 +13,9 @@ const HeaderContainer = () => (
     </div>
     <div className='header__text-box'>
       <MainTitleContainer />
-      <MainButtonComponent href='/'>Discovery our tours</MainButtonComponent>
+      <ButtonComponent theme={{ animation: { moveIn: 'bottom' } }} href='/'>
+        Discovery our tours
+      </ButtonComponent>
     </div>
   </Container>
 );

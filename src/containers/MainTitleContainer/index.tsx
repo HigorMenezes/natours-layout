@@ -2,30 +2,34 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import MainTitleComponent from '../../components/MainTitleComponent';
+import TitleComponent from '../../components/TitleComponent';
 
 const MainTitleContainer = () => (
   <Container>
-    <MainTitleComponent
+    <TitleComponent
       theme={{
         fontSize: 6,
         fontWeight: 400,
         letterSpacing: 3.5,
-        animation: 'left',
+        animation: {
+          moveIn: 'left',
+        },
       }}
     >
       outdoors
-    </MainTitleComponent>
-    <MainTitleComponent
+    </TitleComponent>
+    <TitleComponent
       theme={{
         fontSize: 2,
         fontWeight: 700,
         letterSpacing: 1.74,
-        animation: 'right',
+        animation: {
+          moveIn: 'right',
+        },
       }}
     >
       is where life happens
-    </MainTitleComponent>
+    </TitleComponent>
   </Container>
 );
 
