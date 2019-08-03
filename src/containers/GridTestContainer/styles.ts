@@ -25,6 +25,11 @@ export const Container = styled.section`
         margin-right: ${gutterHorizontal};
       }
     }
+    .col-2-of-4 {
+      width: calc(
+        2 * ((100% - 3 * ${gutterHorizontal}) / 4) + ${gutterHorizontal}
+      );
+    }
 
     .col-1-of-2 {
       width: calc((100% - ${gutterHorizontal}) / 2);
