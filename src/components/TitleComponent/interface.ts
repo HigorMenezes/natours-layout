@@ -9,7 +9,7 @@ export interface ThemeInterface {
   animation?: AnimationInterface;
 }
 
-export default interface MainTitleInterface {
+export default interface TitleInterface {
   children: string;
   theme?: ThemeInterface;
 }

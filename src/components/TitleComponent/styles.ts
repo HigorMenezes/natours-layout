@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
-import MainTitleInterface from './interface';
+import TitleInterface from './interface';
 
 import { MoveInRight, MoveInLeft } from '../../styles/animations/MoveIn';
 
 const animation = css`
-  animation: ${(props: MainTitleInterface) =>
+  animation: ${(props: TitleInterface) =>
       props.theme &&
       props.theme.animation &&
       props.theme.animation.moveIn === 'right'
@@ -15,15 +15,15 @@ const animation = css`
 
 export const Container = styled.span`
   display: block;
-  font-size: ${(props: MainTitleInterface) =>
+  font-size: ${(props: TitleInterface) =>
     props.theme && props.theme.fontSize}rem;
-  font-weight: ${(props: MainTitleInterface) =>
+  font-weight: ${(props: TitleInterface) =>
     props.theme && props.theme.fontWeight};
-  letter-spacing: ${(props: MainTitleInterface) =>
+  letter-spacing: ${(props: TitleInterface) =>
     props.theme && props.theme.letterSpacing}rem;
-  padding-left: ${(props: MainTitleInterface) =>
+  padding-left: ${(props: TitleInterface) =>
     props.theme && props.theme.letterSpacing}rem;
 
-  ${(props: MainTitleInterface) =>
+  ${(props: TitleInterface) =>
     props.theme && props.theme.animation && animation};
 `;
