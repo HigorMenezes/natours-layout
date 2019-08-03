@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import MainTitleInterface from './interface';
 
-import { MoveInRight, MoveInLeft } from '../../animations/MoveIn';
+import { MoveInRight, MoveInLeft } from '../../styles/animations/MoveIn';
 
 const animation = css`
   animation: ${(props: MainTitleInterface) =>

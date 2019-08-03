@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { colorWhite } from '../../theme/theme';
+import { colorWhite } from '../../styles/themes/theme';
 
 export const Container = styled.h1`
   color: ${colorWhite};

@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
-import { colorBlack, colorGreyDark, colorWhite } from '../../theme/theme';
-import { MoveInBottom } from '../../animations/MoveIn';
+import {
+  colorBlack,
+  colorGreyDark,
+  colorWhite,
+} from '../../styles/themes/theme';
+import { MoveInBottom } from '../../styles/animations/MoveIn';
 
 import ThemeInterface from './interface';
 
